@@ -36,9 +36,10 @@
 
 ### Step 4: Switch to flag00 User
 - Used the decrypted password to switch to the `flag00` account:
-  ```bash
-  su flag00
-  Password: nottoohardhere
+  ```
+  bash
+  $> su flag00
+  $> Password: nottoohardhere
   ```
 
 ### Step 5: Retrieve the Flag
