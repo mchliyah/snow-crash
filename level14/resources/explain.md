@@ -3,18 +3,18 @@
 
 ## Observation
 
-the level contain nothing no files or binary .
+the level contain nothing no files or binary.
 
-but sense we have used the reverse engineering tool Ghidra in previous levels we thought that we can use it here too and there no binary left other then getflag itselfe.
+But sense we have used the reverse engineering tool Ghidra in previous levels we thought that we can use it here too and there no binary left other then getflag itselfe.
 
 *belive me you wont think about it at first haha*
 
-exploiting it sayse "you should not reverse this you should not reverse this", we did it anyway
+exploiting it sayse "you should not reverse this you should not reverse this", we did it anyway.
 
 ---
 
 ## Steps to Solve
-as the prev level we copy the binary and will use Ghidra to reverse the binary.
+As the prev level we copy the binary and will use Ghidra to reverse the binary.
 
 ### Step 1: Transfer the Binary
 1. From the VM, transfer the `getflag` binary to local machine for analysis.
@@ -35,8 +35,8 @@ as the prev level we copy the binary and will use Ghidra to reverse the binary.
 ### Step 4: Locate the Functions needed
 1. Navigate to the `main` function and inspect the logic.
 3. We can see that the program is checking for a hexa string and if it matches it will call the `ft_des()`  to get the flag print the flag.
-2. create a file.c and coppy the string ppassed to `ft_des()` when the check matches the hex `0xBC6` which is the `3014`.
-3. ofc we are using the code craeted in the level13 to resolve the the flag.
+2. Create a file.c and coppy the string ppassed to `ft_des()` when the check matches the hex `0xBC6` which is the `3014`.
+3. Ofc we are using the code craeted in the level13 to resolve the the flag.
 
 ### Step 5: Recompile the code and Extract the Flag
 
